@@ -7,21 +7,23 @@ xmlns:h="http://java.sun.com/jsf/html">
 <title>Formulário de Cadastro</title>
 <link rel="stylesheet" type="text/css" href="./css/main.css" />
 </head>
-	<body>
+<body>
+    <!-- Formulário de cadastro -->
+    <h1>Cadastro de usuário</h1>
     <h:form>
         <h:panelGrid columns="2">
             <h:outputLabel for="nome" value="Nome:" />
             <h:inputText id="nome" value="#{pessoaController.pessoa.nome}" required="true" />
-
             <h:commandButton value="Adicionar Nome" action="#{pessoaController.addNomeDigitado}" />
         </h:panelGrid>
-
-        <h:dataTable value="#{pessoaController.pessoa.nomesDigitados}" var="nome">
-            <h:column>
-                <h:outputText value="#{nome}" />
-            </h:column>
-        </h:dataTable>
-        
     </h:form>
-	</body>
+
+    <!-- Lista de nomes -->
+    <h1>Lista</h1>
+    <h:dataTable value="#{pessoaController.pessoa.nomesDigitados}" var="nome">
+        <h:column>
+            <h:outputText value="#{nome}" />
+        </h:column>
+    </h:dataTable>
+</body>
 </html>

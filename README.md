@@ -25,5 +25,5 @@ As dependências necessárias para o projeto, incluindo `javax.faces`, `cdi-api`
 1. Clone este repositório para a sua máquina local.
 2. Importe o projeto para o Eclipse.
 3. Execute o servidor WildFly.
-5. No navegador, acesse:<http://127.0.0.1:8080/Cadastro-0.0.1-SNAPSHOT/cadastro.jsf>
+5. No navegador, acesse:<http://localhost:8080/Cadastro-0.0.1-SNAPSHOT/cadastro.jsf>
 
